@@ -1,4 +1,7 @@
-const socket = io();
+const socket = io({
+    transports: ['websocket']
+});
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const novaSenhaBtn = document.getElementById('nova-senha');
