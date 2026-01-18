@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Senhas</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .reiniciar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #b00000;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .reiniciar-btn:hover {
+            transform: translateX(-50%) scale(1.07);
+            background: #e00000;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="retangulo">
+        <h2>Controle de Senhas</h2>
+
+        <select class="button-80" id="guiche">
+            <option value="01">Guichê 01</option>
+            <option value="02">Guichê 02</option>
+            <option value="03">Guichê 03</option>
+            <option value="04">Guichê 04</option>
+            <option value="05">Guichê 05</option>
+            <option value="06">Guichê 06</option>
+            <option value="07">Guichê 07</option>
+            <option value="08">Guichê 08</option>
+            <option value="09">Guichê 09</option>
+            <option value="10">Guichê 10</option>
+            <option value="11">Guichê 11</option>
+            <option value="12">Guichê 12</option>
+            <option value="13">Guichê 13</option>
+        </select>
+
+        <br><br>
+
+        <button class="button-80" id="nova-senha">Chamar o Próximo</button>
+        <br><br>
+        <button class="button-80" id="nova-senha-prioritaria">Chamar um Prioritário</button>
+        <br><br>
+        <button class="button-80" id="rechamar-ultima">Rechamar a Última Senha</button>
+    </div>
+</div>
+
+<button id="reiniciar-sistema" class="reiniciar-btn">Reiniciar</button>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

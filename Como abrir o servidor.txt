@@ -1,0 +1,46 @@
+Instale o programa "Node JS" - https://nodejs.org/pt
+
+Copie o endereço da Pasta no Windows Explorer com os arquivos
+
+Ex.: "E:\Recadastramento Renda Garantida 2025"
+
+Abra o CMD e digite os seguintes comandos:
+
+"cd (endereço)"
+
+"npm install express socket.io" - vai aparecer uma mensagem grande com o final "found 0 vulnerabilities"
+
+"node server.js" - vai aparecer a mensagem "Servidor rodando na porta 3000"
+
+~~~
+
+Você poderá acessar o servidor nos links abaixo.
+(apenas no computador onde o servidor foi aberto)
+
+http://localhost:3000
+
+http://localhost:3000/controle
+
+~~~
+
+Para acessar o servidor em outra máquina na mesma rede, abra outro CMD e digite "ipconfig"
+
+Encontre a linha onde começa com "Endereço IPv4" e este será o IP do servidor.
+
+Altere o nome "localhost" no endereço pelo IP e conseguirá acessar.
+
+Ex.: http://192.168.0.100:3000 e http://192.168.0.100:3000/controle
+
+~~~
+
+Observações:
+
+O número do IP pode mudar de um dia para o outro. Mude a URL para acessar.
+
+Para o som sair, você vai ter ir no chrome, clicar no (i) ao lado da URL > Configurações do Site > Som >  Permitir
+(Vai ter que permitir novamente sempre que mudar o IP)
+
+Se fechar o servidor (o CMD com os 3 comandos) o contador vai resetar.
+Vai precisar clicar em "chamar próximo" até retornar ao número que estava.
+
+Se a mulher do google parar de falar, reinicie o Chrome no computador do Datashow.
